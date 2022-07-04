@@ -1,4 +1,5 @@
 package ru.netology.sqr;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import ru.netology.sqr.SQRService;
@@ -11,8 +12,8 @@ public class SQRServiceTest {
         int finish = 99;
         int expected = 6;
 
-        int actual = service.CalculateCountSqr(start, finish);
-               Assertions.assertEquals(expected, actual);
+        int actual = service.calculateCountSqr(start, finish);
+        Assertions.assertEquals(expected, actual);
     }
 
     @Test
@@ -22,7 +23,7 @@ public class SQRServiceTest {
         int finish = 100;
         int expected = 7;
 
-        int actual = service.CalculateCountSqr(start, finish);
+        int actual = service.calculateCountSqr(start, finish);
         Assertions.assertEquals(expected, actual);
     }
 
@@ -33,7 +34,7 @@ public class SQRServiceTest {
         int finish = 99;
         int expected = 9;
 
-        int actual = service.CalculateCountSqr(start, finish);
+        int actual = service.calculateCountSqr(start, finish);
         Assertions.assertEquals(expected, actual);
     }
 }
